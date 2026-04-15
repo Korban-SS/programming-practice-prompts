@@ -1,0 +1,121 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Appointment Scheduling Conflict Detector
+
+TIME LIMIT: 75 minutes
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+    - External sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+    - Reference sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION:
+A medical office needs a program to analyze scheduled appointments and detect time conflicts.
+
+The system must:
+1. Load appointment data from a file
+2. Detect conflicts
+3. Output a report listing all conflicting appointments
+
+==================================================
+
+INPUT FILES
+
+1. appointments.txt
+
+Each line contains:
+AppointmentID,PatientName,StartTime,EndTime
+- Time stored in 24-hour format HH:MM
+
+Example contents:
+A101,John Smith,09:00,09:30
+A102,Jane Doe,09:15,10:00
+A103,Alice Brown,10:00,10:30
+A104,Bob White,09:45,10:15
+A105,Chris Green,11:00,11:30
+
+==================================================
+
+REQUIREMENTS
+1. Read all appointment records from the file.
+2. Parse each line into its components.
+3. Convert time strings into comparable values.
+4. Compare every appointment against others to detect overlaps.
+5. A conflict occurs if:
+   StartA < EndB AND EndA > StartB
+6. Display all pairs of conflicting appointments.
+7. Ensure each conflict pair is only reported once.
+8. Display total number of conflicts found.
+9. Skip invalid or malformed records without stopping execution.
+
+==================================================
+
+OUTPUT FORMAT
+
+Conflict Report
+--------------------
+Conflict:
+A101 (09:00-09:30)
+A102 (09:15-10:00)
+
+Conflict:
+A102 (09:15-10:00)
+A104 (09:45-10:15)
+
+--------------------
+Total Conflicts: 2
+
+==================================================
+
+CONSTRAINTS
+- Input file may contain up to 500 appointments
+- Times are in valid 24-hour HH:MM format
+- End time is always after start time
+- File size will not exceed 100 KB
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Appointments that end exactly when another begins (NOT a conflict)
+- Duplicate appointment entries
+- Missing fields
+- Invalid time formats
+- Overlapping multiple appointments
+- Empty file
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- File Input Handling: 15 points
+- Time Parsing and Conversion: 15 points
+- Conflict Detection Logic: 30 points
+- Avoiding Duplicate Conflict Reports: 10 points
+- Output Formatting: 10 points
+- Edge Case Handling: 10 points
+- Code Organization and Clarity: 10 points
+
+==================================================
+
+BONUS (OPTIONAL - 10 POINTS EACH)
+- Identify and display the appointment with the highest number of conflicts.
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- Sample output (screenshot or text)
+- Input file used for testing

@@ -1,0 +1,139 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Student Gradebook and Performance Analyzer
+
+TIME LIMIT: 2 hours
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+    - External sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+    - Reference sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+You are tasked with creating a console-based application for a school that manages student grades and analyzes academic performance.
+
+The system must
+1. Load student and grade data from a file
+2. Calculate averages and letter grades
+3. Identify top-performing and failing students
+4. Output a detailed performance report
+
+==================================================
+
+INPUT FILES
+
+1. students.txt
+Each line contains:
+StudentID,StudentName
+
+Example:
+2001,Alice Johnson
+2002,Bob Smith
+2003,Charlie Davis
+
+2. grades.txt
+Each line contains:
+StudentID,AssignmentName,Score
+
+Example:
+2001,Homework1,85
+2001,Homework2,90
+2002,Homework1,70
+2003,Homework1,50
+
+==================================================
+
+REQUIREMENTS
+1. Read and store all student and grade data using appropriate data structures.
+2. For each student
+    - Calculate the average score
+    - Assign a letter grade based on:
+        - A: 90–100
+        - B: 80–89
+        - C: 70–79
+        - D: 60–69
+        - F: below 60
+    
+3. Identify
+    - The student with the highest average
+    - The student with the lowest average
+    - All students with failing grades (F)
+4. Track
+    - Class average score
+    - Total number of students
+    - Number of passing vs failing students
+5. Output a report to the console AND to a file named report.txt
+
+==================================================
+
+OUTPUT FORMAT
+
+Student Performance Report
+
+Summary:
+Class Average: 69.17
+Top Student: Alice Johnson (87.50)
+Lowest Student: Charlie Davis (50.00)
+Passing Students: 2
+Failing Students: 1
+
+Students:
+Alice Johnson (2001): Average = 87.50, Grade = B
+Bob Smith (2002): Average = 70.00, Grade = C
+Charlie Davis (2003): Average = 50.00, Grade = F
+
+Failing Student List:
+Charlie Davis (2003)
+
+==================================================
+
+CONSTRAINTS
+- Maximum students: 1,000
+- Maximum grade entries: 20,000
+- Scores are integers between 0 and 100
+- Student IDs are unique integers
+- Each student may have multiple assignments
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Grades for non-existent students
+- Students with no grades
+- Empty files
+- Improperly formatted lines (skip and log warning)
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- Correct functionality: 40 pts
+- Input/output handling: 20 pts
+- Code organization and readability: 15 pts
+- Error handling and edge cases: 15 pts
+- Efficiency (appropriate data structures): 10 pts
+
+==================================================
+
+BONUS (OPTIONAL – 10 POINTS)
+- Allow dynamic grading scale input (user-defined ranges)
+- Sort students by average score in descending order
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- Executable (if applicable)
+- Sample input and output files
