@@ -35,10 +35,10 @@ Your program must process the log file and generate a report focused on ERROR ev
 
 ==================================================
 
-INPUT FILES (with examples)
+INPUT FILES
 1. system_log.txt
 Each line contains:
-timestamp,logLevel,messge
+Timestamp,LogLevel,Messge
 - Timestamp format is YYYY-MM-DD HH:MM:SS
 
 Example contents:
@@ -99,7 +99,7 @@ EDGE CASES TO HANDLE
 
 ==================================================
 
-SCORING CRITERIA (100 points breakdown)
+SCORING CRITERIA (100 POINTS)
 - File Input Handling: 15 points
 - Parsing Accuracy: 15 points
 - Filtering Logic: 15 points
