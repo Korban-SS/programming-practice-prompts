@@ -1,0 +1,121 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Log File Error Analyzer
+
+TIME LIMIT: 1 hour
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+	- External sources could include
+		- Forums such as Stack Overflow
+		- Projects on sites such as Github
+		- Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+	- Reference sources could include
+		- Forums such as Stack Overflow
+		- Projects on sites such as Github
+		- Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+A company needs a tool to analyze system log files and summarize error activity.
+
+Each line in the log file represents a system event and includes:
+- Timestamp ()
+- Log Level (INFO, WARNING, ERROR)
+- Message
+
+Your program must process the log file and generate a report focused on ERROR events.
+
+==================================================
+
+INPUT FILES (with examples)
+1. system_log.txt
+Each line contains:
+timestamp,logLevel,messge
+- Timestamp format is YYYY-MM-DD HH:MM:SS
+
+Example contents:
+2026-03-01 08:15:22,INFO,System started
+2026-03-01 08:17:10,ERROR,Database connection failed
+2026-03-01 08:18:45,WARNING,Low memory
+2026-03-01 08:20:01,ERROR,File not found
+2026-03-01 08:25:33,INFO,User login
+2026-03-01 08:30:12,ERROR,Timeout occurred
+
+==================================================
+
+REQUIREMENTS
+1. Read all log entries from the file.
+2. Parse each line into timestamp, log level, and message.
+3. Filter and process only entries with log level "ERROR".
+4. Count total number of ERROR entries.
+5. Group ERROR messages by type (same message text).
+6. Count how many times each unique ERROR message occurs.
+7. Display results sorted by most frequent ERROR first.
+8. Extract and display the earliest and latest ERROR timestamps.
+9. Skip invalid or malformed log entries without stopping execution.
+
+==================================================
+
+OUTPUT FORMAT
+
+Error Analysis Report
+--------------------
+Total Errors: 3
+
+Most Frequent Errors:
+Database connection failed - 1
+File not found - 1
+Timeout occurred - 1
+
+Time Range:
+Earliest Error: 2026-03-01 08:17:10
+Latest Error: 2026-03-01 08:30:12
+
+==================================================
+
+CONSTRAINTS
+- Input file may contain up to 5,000 lines
+- Timestamps are in valid format
+- Log levels are one of: INFO, WARNING, ERROR
+- File size will not exceed 500 KB
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Empty file
+- No ERROR entries
+- Duplicate log lines
+- Malformed timestamps
+- Missing fields
+- Case sensitivity in log levels
+
+==================================================
+
+SCORING CRITERIA (100 points breakdown)
+- File Input Handling: 15 points
+- Parsing Accuracy: 15 points
+- Filtering Logic: 15 points
+- Error Counting and Grouping: 20 points
+- Sorting Results: 10 points
+- Time Range Calculation: 10 points
+- Edge Case Handling: 10 points
+- Code Clarity and Structure: 5 points
+
+==================================================
+
+BONUS (OPTIONAL – 10 POINTS EACH)
+- Output the percentage of ERROR logs compared to total log entries.
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- Input file used for testing
