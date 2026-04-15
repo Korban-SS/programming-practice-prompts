@@ -1,0 +1,144 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Delivery Route Optimizer
+
+TIME LIMIT: 90 minutes
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+    - External sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+    - Reference sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+A delivery company wants a program to organize and optimize daily delivery routes based on package data.
+
+Each record in the input file represents a package delivery and includes:
+
+Drivers must deliver packages in an efficient order:
+1. Higher priority deliveries go first.
+2. Within the same priority, closer distances go first.
+
+Your program must sort and organize deliveries accordingly and generate a route plan.
+
+==================================================
+
+INPUT FILES (with examples)
+
+1. deliveries.txt
+Each line contains:
+PackageID,DestinationZone,Distance,Priority
+- Destination zones: A, B, C, D
+- Distance: miles from warehouse
+- Priority: medium, high, low
+
+Example contents:
+PKG1,A,12.5,High
+PKG2,B,5.0,Low
+PKG3,C,7.2,Medium
+PKG4,A,3.5,High
+PKG5,D,10.0,Medium
+PKG6,B,2.0,High
+
+==================================================
+
+REQUIREMENTS
+1. Read all delivery records from the input file.
+2. Parse each line into its components.
+3. Assign priority ranking:
+   High = 1, Medium = 2, Low = 3
+4. Sort deliveries by:
+   a. Priority (ascending: High first)
+   b. Distance (ascending)
+5. Group deliveries by Destination Zone after sorting.
+6. Display the optimized delivery route.
+7. Calculate total distance traveled (sum of all distances).
+8. Count number of deliveries per zone.
+9. Skip invalid or malformed records.
+
+==================================================
+
+OUTPUT FORMAT
+
+Optimized Delivery Route
+--------------------
+Zone A:
+PKG4 - High - 3.5 miles
+PKG1 - High - 12.5 miles
+
+Zone B:
+PKG6 - High - 2.0 miles
+PKG2 - Low - 5.0 miles
+
+Zone C:
+PKG3 - Medium - 7.2 miles
+
+Zone D:
+PKG5 - Medium - 10.0 miles
+
+--------------------
+Summary
+Total Distance: 40.2 miles
+
+Deliveries per Zone:
+A: 2
+B: 2
+C: 1
+D: 1
+
+==================================================
+
+CONSTRAINTS
+- Input file may contain up to 2,000 records
+- Distances are positive decimal values
+- Zones are limited to A, B, C, D
+- Priorities are strictly High, Medium, Low
+- File size will not exceed 200 KB
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Empty file
+- Invalid priority values
+- Negative or zero distances
+- Missing fields
+- Duplicate package IDs
+- All deliveries in same zone
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- File Input Handling: 15 points
+- Data Parsing Accuracy: 15 points
+- Sorting Logic: 25 points
+- Grouping by Zone: 10 points
+- Distance Calculation: 10 points
+- Output Formatting: 10 points
+- Edge Case Handling: 10 points
+- Code Organization: 5 points
+
+==================================================
+
+BONUS (OPTIONAL – 10 POINTS EACH)
+
+- Allow user to filter and display deliveries for a specific zone only.
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- Input file used for testing
+
