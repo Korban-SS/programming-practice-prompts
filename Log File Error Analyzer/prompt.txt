@@ -26,11 +26,6 @@ ALLOWED
 PROBLEM DESCRIPTION
 A company needs a tool to analyze system log files and summarize error activity.
 
-Each line in the log file represents a system event and includes:
-- Timestamp ()
-- Log Level (INFO, WARNING, ERROR)
-- Message
-
 Your program must process the log file and generate a report focused on ERROR events.
 
 ==================================================
@@ -43,6 +38,7 @@ Timestamp,LogLevel,Messge
 
 Example contents:
 2026-03-01 08:15:22,INFO,System started
+2026-03-01 08:16:29,DEBUG,File loaded
 2026-03-01 08:17:10,ERROR,Database connection failed
 2026-03-01 08:18:45,WARNING,Low memory
 2026-03-01 08:20:01,ERROR,File not found
