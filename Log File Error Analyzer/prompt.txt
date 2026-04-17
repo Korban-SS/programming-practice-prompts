@@ -90,7 +90,6 @@ EDGE CASES TO HANDLE
 - Duplicate log lines
 - Malformed timestamps
 - Missing fields
-- Case sensitivity in log levels
 
 ==================================================
 
