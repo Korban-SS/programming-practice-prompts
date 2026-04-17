@@ -81,7 +81,6 @@ CONSTRAINTS
 - Input file may contain up to 5,000 lines
 - Timestamps are in valid format
 - Log levels are one of: INFO, WARNING, ERROR, DEBUG
-- File size will not exceed 500 KB
 
 ==================================================
 
