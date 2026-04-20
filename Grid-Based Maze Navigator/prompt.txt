@@ -1,0 +1,122 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Grid-Based Maze Navigator
+
+TIME LIMIT: 90 minutes
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+    - External sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+    - Reference sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+You are developing a navigation system for a robot that must move through a warehouse represented as a grid.
+
+The grid contains:
+- S = Start position
+- E = End position
+- . = Open space
+- # = Obstacle
+
+The robot can move up, down, left, or right (no diagonal movement).
+
+Your task is to determine whether a valid path exists from S to E and calculate the minimum number of steps required.
+
+==================================================
+
+INPUT FILES
+
+1. grid.txt
+
+Example contents:
+
+S..#..
+.##...
+...#E.
+.#....
+......
+
+Explanation:
+- First line: rows and columns
+- Next lines: grid layout
+
+==================================================
+
+REQUIREMENTS
+1. Read grid dimensions and layout from the file.
+2. Locate the Start (S) and End (E) positions.
+3. Traverse the grid using a suitable method (e.g., BFS or DFS).
+4. Determine if a path exists from S to E.
+5. If a path exists, calculate the minimum number of steps required.
+6. Avoid obstacles (#) and stay within grid bounds.
+7. Mark visited positions to prevent infinite loops.
+8. Output the result clearly.
+9. Handle invalid input gracefully.
+
+==================================================
+
+OUTPUT FORMAT
+
+Maze Navigation Result
+--------------------
+Path Found: YES
+Minimum Steps: 9
+
+OR (if no path exists):
+
+Maze Navigation Result
+--------------------
+Path Found: NO
+
+==================================================
+
+CONSTRAINTS
+- Grid size: up to 50 x 50
+- Exactly one S and one E will exist
+- Grid contains only valid characters (S E . #)
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Start equals End (0 steps)
+- No possible path due to obstacles
+- Fully blocked grid
+- Missing S or E (invalid input)
+- Multiple possible paths (must choose shortest)
+- Very small grid (1x1, 1xN, Nx1)
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- File Input Handling: 10 points
+- Grid Parsing: 10 points
+- Correct Traversal Logic: 30 points
+- Shortest Path Calculation: 20 points
+- Edge Case Handling: 10 points
+- Output Formatting: 10 points
+- Code Organization and Readability: 10 points
+
+==================================================
+
+BONUS (10 - POINTS EACH)
+- Output the actual path taken using coordinates or directional steps.
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- Input file used for testing
