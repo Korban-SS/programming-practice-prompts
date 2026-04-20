@@ -119,4 +119,3 @@ BONUS (10 - POINTS EACH)
 
 DELIVERABLES
 - Source code file(s)
-- Input file used for testing
