@@ -132,9 +132,10 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (OPTIONAL – 10 POINTS EACH)
+BONUS (OPTIONAL)
 
-- Allow user to filter and display deliveries for a specific zone only.
+10 POINTS - Allow user to filter and display deliveries for a specific zone only.
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
