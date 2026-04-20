@@ -127,13 +127,12 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (OPTIONAL – 10 POINTS)
-- Allow dynamic grading scale input (user-defined ranges)
-- Sort students by average score in descending order
+BONUS (OPTIONAL)
+10 POINTS - Allow dynamic grading scale input (user-defined ranges)
+10 POINTS - Sort students by average score in descending order
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
 DELIVERABLES
 - Source code file(s)
-- Executable (if applicable)
-- Sample input and output files
