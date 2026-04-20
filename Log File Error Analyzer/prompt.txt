@@ -105,11 +105,11 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (OPTIONAL – 10 POINTS EACH)
-- Output the percentage of ERROR logs compared to total log entries.
+BONUS (OPTIONAL)
+10 POINTS - Output the percentage of ERROR logs compared to total log entries.
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
 DELIVERABLES
 - Source code file(s)
-- Input file used for testing
