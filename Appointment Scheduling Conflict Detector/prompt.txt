@@ -110,8 +110,9 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (OPTIONAL - 10 POINTS EACH)
-- Identify and display the appointment with the highest number of conflicts.
+BONUS (OPTIONAL)
+10 POINTS - Identify and display the appointment with the highest number of conflicts.
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
