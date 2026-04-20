@@ -112,8 +112,9 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (10 - POINTS EACH)
-- Output the actual path taken using coordinates or directional steps.
+BONUS (OPTIONAL)
+10 POINTS - Output the actual path taken using coordinates or directional steps.
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
