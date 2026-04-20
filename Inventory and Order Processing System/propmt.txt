@@ -121,13 +121,12 @@ SCORING CRITERIA (100 POINTS)
 
 ==================================================
 
-BONUS (OPTIONAL – 10 POINTS EACH)
-- Allow user to input file names at runtime
-- Sort final inventory output alphabetically by product name
+BONUS (OPTIONAL)
+10 POINTS - Allow user to input file names at runtime
+10 POINTS - Sort final inventory output alphabetically by product name
+20 POINTS - Non-terminal user interface
 
 ==================================================
 
 DELIVERABLES
 - Source code file(s)
-- Executable (if applicable)
-- Sample input and output files
