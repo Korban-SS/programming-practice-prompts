@@ -1,0 +1,119 @@
+SKILLSUSA PROGRAMMING CONTEST – PRACTICE CHALLENGE
+
+TITLE: Smart Library Checkout & Overdue Fee Tracker
+
+TIME LIMIT: 90 minutes
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions
+- No copy paste from external sources
+    - External sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+    - Reference sources could include
+        - Forums such as Stack Overflow
+        - Projects on sites such as Github
+        - Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+A school library needs a system to track book checkouts and calculate overdue fees.
+
+Your program must determine overdue status and calculate fees.
+
+==================================================
+
+INPUT FILES
+
+1. checkouts.txt
+Each line contains:
+CheckoutID,StudentName,BookTitle,CheckoutDate,DueDate,ReturnDate
+- All dates are stored in YYY-MM-DD format
+- Return date can either be a date or "NOT RETURNED"
+
+Example contents:
+C001,John Smith,Math Reference Guide,2026-03-01,2026-03-10,2026-03-12
+C002,Alice Brown,History Book,2026-03-05,2026-03-12,2026-03-12
+C003,Bob Lee,Science Reference Manual,2026-03-02,2026-03-09,NOT RETURNED
+C004,Sara White,English Novel,2026-03-04,2026-03-11,2026-03-20
+
+==================================================
+
+REQUIREMENTS
+1. Read all checkout records from the file.
+2. Parse each line into components.
+3. Determine if the book is overdue:
+   - If Return Date > Due Date OR NOT RETURNED (use current date = 2026-03-14)
+4. Calculate number of overdue days.
+5. Apply correct fee rate based on book type.
+6. Calculate total fees per student.
+7. Sort students alphabetically in output.
+8. Display total library revenue from fines.
+9. Skip invalid records without stopping execution.
+
+==================================================
+
+OUTPUT FORMAT
+
+Library Overdue Report
+--------------------
+Student: Alice Brown
+Total Fine: $0.00
+
+Student: Bob Lee
+Total Fine: $5.00
+
+Student: John Smith
+Total Fine: $1.00
+
+Student: Sara White
+Total Fine: $4.50
+
+--------------------
+Total Library Revenue: $10.50
+
+==================================================
+
+CONSTRAINTS
+- Input file may contain up to 2,000 records
+- Return Date may be "NOT RETURNED"
+- $0.50 per day late for Regular books
+- $1.00 per day late for Reference books (identified if title contains the word "Reference")
+
+==================================================
+
+EDGE CASES TO HANDLE
+- Book returned before due date (no fee)
+- Missing or malformed dates
+- Invalid date ranges (return before checkout)
+- Students with multiple books
+- Case sensitivity in "Reference" detection
+- Empty file
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- File Input Handling: 15 points
+- Date Parsing and Validation: 20 points
+- Overdue Calculation Logic: 20 points
+- Fee Calculation Accuracy: 15 points
+- Sorting Output: 10 points
+- Aggregation by Student: 10 points
+- Edge Case Handling: 10 points
+
+==================================================
+
+BONUS (OPTIONAL)
+10 POINTS - Identify the student with the highest total fine and display a warning message.
+20 POINTS - Non-terminal user interface
+
+==================================================
+DELIVERABLES
+- Source code file(s)
