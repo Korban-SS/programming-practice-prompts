@@ -1,0 +1,155 @@
+TITLE: Smart City Simulation System
+
+TIME LIMIT: 2–3 hours (or extended project)
+
+RESTRICTIONS
+- No generative AI
+- No full code solutions from external sources
+- No copy paste from external sources
+	- External sources could include
+		- Forums such as Stack Overflow
+		- Projects on sites such as GitHub
+		- Past projects
+
+ALLOWED
+- Official and unofficial documentation
+- Using external sources as reference (Not copying code directly)
+	- Reference sources could include
+		- Forums such as Stack Overflow
+		- Projects on sites such as GitHub
+		- Past projects
+
+==================================================
+
+PROBLEM DESCRIPTION
+A city planning organization needs a simulation system to model how a small city evolves over time.
+
+Your program must simulate citizens, buildings, and city events while tracking and analyzing city data such as population happiness and activity.
+
+The system should allow the city to update over time, apply rules, and generate reports.
+
+==================================================
+
+INPUT DATA
+You may hardcode or simulate input data.
+
+Suggested data:
+- List of citizen names and ages
+- Initial city grid size (e.g., 5x5)
+- Random or predefined city events
+
+Example:
+Citizens:
+Alex, 25
+Jordan, 40
+Taylor, 31
+
+==================================================
+
+REQUIREMENTS
+
+1. Class Design (Unit 3)
+- Create at least two classes:
+  - Citizen
+  - Building
+- Each class must include:
+  - Instance variables
+  - Constructor(s)
+  - At least 2 methods
+- Use encapsulation (private variables + getters/setters)
+
+2. Data Collections (Unit 4)
+- Use:
+  - ArrayList<Citizen> to store citizens
+  - Either:
+    - ArrayList<Building> OR
+    - int[][] or Building[][] for a city grid
+- Store and manage multiple objects
+
+3. Selection and Iteration (Unit 2)
+- Use:
+  - if / else statements
+  - for or while loops
+- Simulate city updates:
+  - Example: adjust citizen happiness based on conditions
+
+4. Algorithms (Unit 4 emphasis)
+Implement:
+- A search algorithm (find a citizen by name)
+- A sorting algorithm (sort citizens by happiness)
+- A traversal algorithm (iterate through collections)
+
+5. Methods and Abstraction (Unit 1 & 3)
+- Write multiple methods that:
+  - Perform updates
+  - Return calculated values (e.g., average happiness)
+- Use parameters and return types correctly
+
+6. Strings and Math (Unit 1)
+- Use:
+  - String methods (e.g., .equals, .substring)
+  - Math class (e.g., random events)
+
+7. Recursion (Advanced Unit 4)
+- Implement at least one recursive method
+  - Example: total or average happiness calculation
+
+8. Output Report
+Display a report like:
+
+City Simulation Report
+----------------------
+Total Citizens: 3
+Average Happiness: 52
+
+Happiest Citizen: Alex - 78
+Least Happy Citizen: Jordan - 30
+
+City Events Applied: 5
+
+9. Program Behavior
+- Run multiple simulation steps (loop over time)
+- Update city state each step
+- Print results at the end
+
+==================================================
+
+CONSTRAINTS
+- Number of citizens: up to 100
+- City grid size: up to 10x10
+- Program must run without crashing
+- No advanced libraries beyond standard Java
+
+==================================================
+
+EDGE CASES TO HANDLE
+- No citizens in the system
+- Duplicate citizen names
+- Empty collections
+- Extremely high or low happiness values
+- Searching for a non-existent citizen
+
+==================================================
+
+SCORING CRITERIA (100 POINTS)
+- Class Design (OOP): 20 points
+- Data Structures (ArrayList / Arrays): 15 points
+- Control Structures (loops + conditionals): 15 points
+- Algorithms (search, sort, traversal): 20 points
+- Method Design and Abstraction: 10 points
+- Recursion Implementation: 10 points
+- Output and Reporting: 5 points
+- Code Clarity and Structure: 5 points
+
+==================================================
+
+BONUS (OPTIONAL)
+10 POINTS - Add random city events (e.g., festival, disaster)
+20 POINTS - Add user interaction (menu system or input)
+30 POINTS - Implement a visual grid display of the city
+
+==================================================
+
+DELIVERABLES
+- Source code file(s)
+- (Optional) Short explanation of program design
