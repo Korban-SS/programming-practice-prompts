@@ -1,0 +1,126 @@
+LANGUAGE LEARNING PROGRAMMING PROMPT
+
+TITLE: MiniSim — Ecosystem Simulator
+TARGET LANGUAGE: [Insert language]
+
+RESTRICTIONS
+- No generative AI to write, debug, or explain project code
+- No submitting full code solutions written by someone else
+- You may discuss concepts and ask for help, but you must understand your submitted code
+
+ALLOWED
+- Official and unofficial documentation
+- External sources as references, including forums and existing projects
+- Reference code, provided you do not copy it directly into your project
+
+==================================================
+
+PROBLEM DESCRIPTION
+
+Create a small ecosystem simulation on a grid. Plants grow and reproduce, herbivores eat plants, and carnivores hunt herbivores. The simulation advances in cycles and displays the world, population changes, and important events.
+
+A command-line interface is acceptable. A graphical interface is not required.
+
+==================================================
+
+REQUIREMENTS
+
+1. The world must be at least 30x30 cells.
+2. Each cell may contain at most one plant and one animal.
+3. The simulation must provide at least 4 display layers: Ground, Vegetation, Animals, and Weather.
+4. The world must include at least 2 weather conditions, such as Rain and Drought. Weather must affect plant growth.
+5. The program must include at least 2 plant type, 3 herbivore types, and 3 carnivore types.
+6. Every organism must be able to reproduce under a defined condition.
+7. Every animal must have an energy value, lose energy over time, and die when its energy reaches zero.
+8. Animals may move one cell per cycle in the four cardinal directions. They cannot move beyond the world’s edges.
+9. Each simulation cycle must follow this order:
+    - Plants grow.
+    - Animals move.
+    - Herbivores eat plants in their cell.
+    - Carnivores may move into an adjacent herbivore’s cell and eat it.
+    - Animals lose energy and animals with no energy die.
+    - Eligible organisms reproduce.
+10. Reproduction creates offspring in a valid, unoccupied cell next to the parent. If no such cell is available, reproduction does not occur.
+11. Provide a readable visual display of the grid using symbols or colors, with a legend explaining each symbol.
+12. Show the population count for every species.
+13. Maintain an event log that records births, deaths, feeding, and weather changes.
+14. Allow the user to advance the simulation by one cycle or run it continuously.
+15. Allow the user to set the automatic cycle speed.
+16. Allow the user to add or remove organisms and change the weather.
+17. Provide a save and load feature. A loaded world must preserve its grid, organisms, cycle count, and weather.
+18. Invalid user input must not crash the program.
+19. Include tests or documented test cases for movement, feeding, reproduction, saving, and loading.
+20. Optional extensions:
+    - Show population history at multiple points in time.
+    - Allow users to create multiple worlds or choose world dimensions.
+    - Add more weather conditions or make weather change automatically.
+    - Add species with different movement, energy, feeding, or reproduction traits.
+    - Add a graphical interface or world-generation option.
+    - Allow custom world sizes
+    - Create terrain generation with features such as mountains or rivers with only select organism types being able to exist on the terrain tile
+
+==================================================
+
+SIMULATION RULES
+
+- Plants that are eaten are removed from their cell.
+- Animals that are eaten are removed from the world.
+- Each simulation cycle counts as one simulation step.
+- Update speed controls how quickly cycles run; it does not change the simulation rules.
+- The event log must identify the cycle and event. Include a location when applicable.
+
+==================================================
+
+OUTPUT FORMAT
+
+Ecosystem Name
+World Size: 30x30
+Current Layer: Animals
+Time Elapsed: 30 seconds
+Cycles Elapsed: 25
+
+Grid Preview (the actual world must be at least 30x30):
+. . . . . . . . . .
+. R . . F . . . . .
+. . P . . . R . . .
+. . . . H . . . . .
+. F . . . . . . P .
+
+Legend
+. = empty
+P = plant
+R = rabbit
+F = fox
+H = deer
+
+Organism Populations
+- Clover: 42
+- Rabbit: 16
+- Deer: 8
+- Fox: 4
+
+Population History
+Species: Rabbit
+Start: 12
+10 seconds: 14
+30 seconds: 16
+1 minute: 18
+
+Recent Events
+- Cycle 24: Rabbit ate Clover at (12, 7).
+- Cycle 25: Fox ate Rabbit at (9, 4).
+- Cycle 25: Clover reproduced at (3, 18).
+
+Options
+1. Switch Layers
+2. Advance One Cycle
+3. Run Simulation
+4. Add Organism
+5. Remove Organism
+6. Change Weather
+7. Set Update Speed
+8. View Population History
+9. View Event Log
+10. Save World
+11. Load World
+12. New World
